@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className={styles.index}>
       <Layout>
-        <h1>Bienvenue sur la quête Next</h1>
+      <h1>Bienvenue sur la quête NextJs</h1>
         <Image
           src={myImage}
           height="37%"
@@ -22,18 +22,7 @@ export default function Home() {
           layout="responsive"
           alt="image lac"
         />
-        <ul>
-          <li>
-            <Link href="/about">
-              <a>About Us</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/termsofuse">
-              <a>Terms of Use</a>
-            </Link>
-          </li>
-        </ul>
+        
       </Layout>
     </div>
   );

@@ -4,27 +4,25 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
 export default function Header({ name }) {
-    return (
-        <div>
-            <ul>
+  return (
+    <div>
+      <ul className={styles.header}>
         <li>
           <Link href="/">
-            <a>Home</a>
+            <a className={styles.aheader}>Home</a>
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <a>About Us</a>
+            <a className={styles.aheader}>About Us</a>
           </Link>
         </li>
         <li>
           <Link href="/termsofuse">
-            <a>Terms of use</a>
+            <a className={styles.aheader}>Terms of use</a>
           </Link>
         </li>
       </ul>
-        </div>
-    )
-
-
+    </div>
+  );
 }
